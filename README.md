@@ -4,7 +4,7 @@
 
 This project is an AI-powered Customer Complaint Management System developed for the AIVOA Full Stack Developer Assessment. The application helps pharmaceutical companies process customer complaints by extracting complaint details from uploaded documents using AI, generating summaries, and storing complaint information in a structured database.
 
-The system uses LangGraph for AI workflow orchestration, Groq's Gemma2-9B-IT large language model for intelligent extraction and summarization, FastAPI as the backend, React for the frontend, and PostgreSQL for data storage.
+The system uses LangGraph for AI workflow orchestration, Groq's llama-3.3-70b-versatile large language model for intelligent extraction and summarization, FastAPI as the backend, React for the frontend, and PostgreSQL for data storage.
 
 ---
 
@@ -38,7 +38,7 @@ The system uses LangGraph for AI workflow orchestration, Groq's Gemma2-9B-IT lar
 - Python
 - LangGraph
 - LangChain
-- Groq (gemma2-9b-it)
+- Groq (llama-3.3-70b-versatile)
 - SQLAlchemy
 
 ### Database
@@ -89,7 +89,7 @@ Extract Text
 LangGraph Workflow
         │
         ▼
-Groq (gemma2-9b-it)
+Groq (llama-3.3-70b-versatile)
         │
         ▼
 Extract Complaint Details
@@ -142,7 +142,7 @@ Create a `.env` file inside the backend folder.
 
 ```env
 GROQ_API_KEY=YOUR_GROQ_API_KEY
-MODEL_NAME=gemma2-9b-it
+MODEL_NAME=llama-3.3-70b-versatile
 DATABASE_URL=YOUR_DATABASE_URL
 ```
 

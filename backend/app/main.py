@@ -41,7 +41,7 @@ app.add_middleware(
 # =====================================================
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL_NAME = os.getenv("MODEL_NAME", "gemma2-9b-it")
+MODEL_NAME = os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")
 
 print("Groq Key Loaded:", GROQ_API_KEY[:10] if GROQ_API_KEY else "NOT FOUND")
 print("Model:", MODEL_NAME)
