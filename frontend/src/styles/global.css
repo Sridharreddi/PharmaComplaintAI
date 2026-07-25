@@ -1,0 +1,81 @@
+/* ===========================
+   Global Layout
+=========================== */
+
+body {
+  background: #f7f8fc;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+input,
+select,
+textarea {
+  transition: all 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  border: 1px solid #e8ecf4;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
+}
+
+/* Inputs */
+
+input,
+select,
+textarea {
+  border-radius: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #5b4cf6 !important;
+}
+
+/* Buttons */
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+}
